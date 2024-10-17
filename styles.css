@@ -10,18 +10,26 @@
     text-align: center;
     margin-top: 100px;
 }
+.info h3{
+    margin-top: 5px;
+}
+.info h2{
+    margin-top: 7px;
+}
 .infoimg{
-    width: 96px;
+    width: 90px;
     border-radius: 50%;
+    animation: girarYEscalar 5s infinite ease-in-out;
 }
 .links{
     text-align: center;
     list-style-type: none;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .imglink{
     width: 30px;
     margin-left: 15px;
+    margin-top: 30px;
 }
 a{
     color: white;
@@ -47,8 +55,8 @@ a{
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     position: absolute;
 }
@@ -61,4 +69,21 @@ a{
     display: inline-block;
     text-align: center; 
     font-family: sans-serif;
+}
+@keyframes girarYEscalar {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform:  scale(0.8);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
